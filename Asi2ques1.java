@@ -29,12 +29,12 @@ class bill
 			hire_charge = in.nextInt();
 
 
-		if(unit_consumed < 100)
+		if(unit_consumed < 1000)
 		{
 		bill_amount = hire_charge + 1*unit_consumed ;
 		display(bill_amount);
 	}
-	else if(unit_consumed>100 && unit_consumed<200)
+	else if(unit_consumed>100 && unit_consumed<=200)
 	{
 		int rem_unit;
 		rem_unit = unit_consumed - 100;
